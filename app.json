@@ -1,0 +1,56 @@
+{
+  "name": "⋆ 𝙀𝙈𝙄𝙉-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 ⋆",
+  "description": "[Emin-Userbot] Userbot Hanya Untuk Bersenang - Senang",
+  "logo": "https://files.catbox.moe/ep7m5q.jpg",
+  "keywords": ["telegram", "userbot", "Emin-Userbot", "modular", "python"],
+  "repository": "https://github.com/Rans33281/Emin-Userbot",
+  "stack": "container",
+  "env": {
+    "API_KEY": {
+      "description": "Dapatkan API ID di https://my.telegram.org/auth",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Dapatkan API Hash di https://my.telegram.org/auth",
+      "required": true
+    },
+    "STRING_SESSION": {
+      "description": "Dapatkan String Session di https://t.me/GeneratorStringRobot",
+      "required": true
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Nama App heroku, Nama App yang paling pertama di isi (liat paling atas)",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Ambil Heroku API KEY mu disini » https://dashboard.heroku.com/account",
+      "required": true
+    },
+    "OPENAI_API_KEY": {
+      "description": "Ambil key OPENAI_API_KEY mu disini » https://platform.openai.com/account/api-keys",
+      "required": false
+    }
+  },
+  "addons": [
+    {
+    "plan": "heroku-postgresql",
+      "options": {
+        "version": "16"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ],
+  "formation": {
+    "ayiin": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}
