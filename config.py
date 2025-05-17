@@ -10,7 +10,7 @@ load_dotenv()
 
 
 DEVS = [
-    607067484, # Ayiin
+    1927018403, # Ayiin
     844432220, # Risman
     883761960, # Ari
     2130526178, # Alfa
@@ -57,12 +57,12 @@ GCAST_BLACKLIST = [
 
 class Config:
     # Telegram App KEY and HASH
-    API_KEY = int(getenv("API_KEY") or 0)
-    API_HASH = str(getenv("API_HASH") or None)
+    API_KEY = int(getenv("20897598") or 0)
+    API_HASH = str(getenv("93acdbdc4b23c0398bd2042d5ee3865e") or None)
 
     # Inline bot helper
-    BOT_TOKEN = getenv("BOT_TOKEN", None)
-    BOT_USERNAME = getenv("BOT_USERNAME", None)
+    BOT_TOKEN = getenv("7532978685:AAER6dYXcmgp5S9vTEHf8kPKAxQxP9nrAuk", None)
+    BOT_USERNAME = getenv("bngstcodebot", None)
 
     OPENAI_API_KEY = getenv("OPENAI_API_KEY", None)
 
@@ -79,10 +79,10 @@ class Config:
         BLACKLIST_CHAT = [-1001473548283, -1001675396283, -1001718852988]
 
     # Userbot Session String
-    STRING_SESSION = getenv("STRING_SESSION", None)
+    STRING_SESSION = getenv("1BVtsOKEBuw5mNDs4WHVBsFKIts3R12otfS8ft-tOUPl52vgPYPieOJEWLYx9Vd6KgdMsDkV6ksTJgCdCNlA-OEg_PDkv5UAlRutZpNql1IgIGYHGCP-MGPmd_8LqrPH54jDVz7-M4rFNQEWBliZTnDpo1CCM4BHqydAaAsdm-XMh6YAGi1kWqUhu9ip246HsRbRQjmMk5VgBVc6bWBy2fvKgyYblWERg4mOfisYuGELAGWzJ-IBhhnxJeCytushscvQD1oC_eDxFEp6pTUJayj5rwSXTEm1xYiqtf29W7hUIQuByb2TQVuND1EhMaVzla29JlfmTHqHDBkZIo6LjNfN-1QIO6Wg=", None)
 
     # Logging channel/group ID configuration.
-    BOTLOG_CHATID = int(getenv("BOTLOG_CHATID", "0"))
+    BOTLOG_CHATID = int(getenv("-1002277828262", "0"))
 
     # Load or No Load modules
     LOAD = getenv("LOAD", "").split()
@@ -112,7 +112,7 @@ class Config:
     GITHUB_ACCESS_TOKEN = getenv("GITHUB_ACCESS_TOKEN", None)
 
     # Custom (forked) repo URL for updater.
-    UPSTREAM_REPO_URL = getenv("UPSTREAM_REPO_URL", "https://github.com/AyiinXd/Ayiin-Userbot.git")
+    UPSTREAM_REPO_URL = getenv("UPSTREAM_REPO_URL", "https://github.com/Exploit-Tim/Emin-Userbot.git")
 
     # Custom Name Sticker Pack
     S_PACK_NAME = getenv("S_PACK_NAME", None)
