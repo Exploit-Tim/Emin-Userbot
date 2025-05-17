@@ -291,7 +291,7 @@ async def devices_specifications(request):
 async def twrp(request):
     """ɢᴇᴛ ᴀɴᴅʀᴏɪᴅ ᴅᴇᴠɪᴄᴇ ᴛᴡʀᴘ"""
     textx = await request.get_reply_message()
-    device = request.pattern_match.group(1)can't find
+    device = request.pattern_match.group(1)
     if device:
         pass
     elif textx:
